@@ -12,7 +12,7 @@ class FeatureExtractor:
             features.extend([
                 self._rms(x), # signal energy
                 self._mav(x), # mean activation level
-                self._zxr(x), # frequency content proxy
+                self._zcr(x), # frequency content proxy
                 self._wl(x), # signal complexity
             ])
         return np.array(features)
